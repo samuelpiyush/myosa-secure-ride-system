@@ -1,8 +1,7 @@
 ---
-publishDate: 2025-09-15
+publishDate: 2025-12-30
 title: MYOSA Secure Ride System (MSRS)
 excerpt: A wireless helmet-based ignition interlock system ensuring two-wheeler safety using dual ESP32 controllers.
-image: msrs-cover.jpg
 tags:
   - embedded
   - iot
@@ -20,29 +19,27 @@ This project was developed by Team Asterix as part of the MYOSA initiative.
 
 ## Overview
 
-The MYOSA Secure Ride System (MSRS) is a safety-focused ignition interlock system designed for two-wheelers. 
+The MYOSA Secure Ride System (MSRS) is a helmet-bike interlock safety system designed for two-wheelers. 
 The system ensures that the vehicle ignition remains disabled unless the rider is wearing a helmet.
 
-The architecture uses a dual-microcontroller, fully wireless design. A MYOSA ESP32 board acts as the vehicle-mounted controller, while an external ESP32 embedded in the helmet acts as a sensor hub. Helmet wear confirmation is transmitted securely via Bluetooth Low Energy (BLE), after which the ignition relay is activated.
+The architecture uses a dual-microcontroller, fully wireless design. A MYOSA motherboard acts as the helmet-mounted unit with majorly two sensors the gesture sensore and the barometric pressure sensor, while an external ESP32 mounted on the vehicle unit has the OLED display and gyroscope/accelerometer sesnor. Helmet wear confirmation is transmitted securely via Bluetooth Low Energy (BLE), after which the ignition is activated.
 
-This approach improves rider safety, prevents helmet misuse, and adds anti-theft protection through motion detection and wireless alerts.
+This approach improves rider safety, prevents helmet misuse, and adds afall/crash protection through motion detection and wireless alerts.
 
 ### Images
 
+ 
 <p align="center">
   <img src="/system-architecture.jpg" width="800"><br/>
   <i>Overall architecture of the MYOSA Secure Ride System</i>
 </p>
 
-<p align="left">
-  <img src="/helmet-module1.jpg" width="800"><br/>
-</p>
-<p align="right">
-  <img src="/helmet-module2.jpg" width="800"><br/>
-</p>
+
 <p align="center">
-  <img src="/helmet-module3.jpg" width="800"><br/>
-  <i>Helmet unit using MYOSA Motherboard</i>
+  <img src="/helmet-module1.jpg" width="400"><br/>
+  <img src="/helmet-module2.jpg" width="400"><br/>
+  <img src="/helmet-module3.jpg" width="400"><br/>
+  <i>Helmet unit using MYOSA Motherboard</i>  
 </p>
 
 <p align="center">
@@ -59,28 +56,33 @@ This approach improves rider safety, prevents helmet misuse, and adds anti-theft
 
 ## Features (Detailed)
 
-### 1. Wireless Helmet Verification
-An ESP32 inside the helmet collects proximity and pressure/temperature data to verify that the helmet is worn.
+### 1. Mandatory Helmet Enforcement
+The system ensures that the vehicle ignition remains locked unless the rider is wearing the helmet.  
+Helmet verification is mandatory and is continuously monitored to prevent ignition bypass or misuse.
 
-### 2. Secure BLE Communication
-A low-latency, encrypted BLE link transmits the helmet-worn confirmation to the MYOSA board.
+### 2. Wireless Helmet–Bike Communication
+A secure, low-latency wireless link is established between the helmet-mounted ESP32 and the vehicle-mounted MYOSA ESP32.  
+Helmet status is transmitted using Bluetooth Low Energy (BLE), ensuring a fully wireless and reliable connection.
 
-### 3. Ignition Interlock System
-The MYOSA ESP32 activates a relay through a MOSFET only after successful helmet verification.
+### 3. Sensor-Based Ignition Control
+Multiple sensors are used to confirm valid helmet wear conditions:
+Only when valid sensor conditions are satisfied does the system activate the ignition relay.
 
-### 4. Anti-Theft Detection
-The onboard MPU6050 detects unauthorized movement and triggers alerts via Wi-Fi.
+### 4. Crash Detection and Emergency Alerting
+The onboard motion sensor continuously monitors vehicle movement.  
+Sudden abnormal motion or impact patterns can be detected to identify crash or theft scenarios, triggering alert mechanisms via wireless communication.
 
-### 5. Real-Time Status Display
-An OLED screen displays system states such as “Helmet Required”, “Ready”, and “Alert Mode”.
+### 5. Low-Cost and Scalable Design
+Its modular architecture allows easy scalability, future feature expansion, and adaptation to different vehicle platforms.
+
 
 ## Usage Instructions
 
 1. Power the vehicle-mounted MYOSA board.
 2. Power the helmet ESP32 module.
 3. Wear the helmet properly.
-4. Wait for the “Ready” status on the OLED display.
-5. Start the vehicle once the ignition relay is enabled.
+4. Wait for the helmet "Worn" and Ignition Enabled status on the OLED display.
+5. Start the vehicle once the ignition is enabled.
 
 ## Tech Stack
 
