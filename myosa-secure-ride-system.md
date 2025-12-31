@@ -56,9 +56,7 @@ This approach improves rider safety, prevents helmet misuse, and adds afall/cras
 
 ### Videos
 
-<video controls width="100%">
-  <source src="Videos/Demonstration.mp4" type="video/mp4">
-</video>
+Click below to view the full Demonstration video. 👉 [View Demonstration Video](./Demonstration.md)
 
 ## Features (Detailed)
 
