@@ -64,12 +64,14 @@ This approach improves rider safety, prevents helmet misuse, and adds afall/cras
 </video>
 <i>Demonstration of The Guardian Link</i> 
 
+If video not playing. 👉 [View Demonstration Video](./myosa-demonstration.mp4) 
 
 <video controls width="100%">
   <source src="/myosa-presentation.mp4" type="video/mp4">
 </video>
-<i>Presentation on The Guardian Link</i>
+<i>Presentation on The Guardian Link</i> 
 
+If video not playing. 👉 [View Presentation Video](./myosa-presentation.mp4) 
 
 ## Code
 ### Helmet Unit
@@ -569,6 +571,15 @@ Its modular architecture allows easy scalability, future feature expansion, and 
 * ESP32 Board Package
 * BLE Libraries
 * Sensor libraries (APDS9960, BMP180, MPU6050)
+
+## File Structure
+/myosa-msrs
+├─ myosa-secure-ride-system.md
+├─ myosa-cover.jpg
+├─ system-architecture.jpg
+├─ helmet-module-1.jpg
+├─ vehicle-controller.jpg
+└─ myosa-demonstration.mp4
 
 
 
