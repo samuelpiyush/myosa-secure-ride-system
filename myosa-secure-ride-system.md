@@ -30,24 +30,24 @@ This approach improves rider safety, prevents helmet misuse, and adds afall/cras
 
  
 <p align="center">
-  <img src="/system-architecture.jpg" width="800"><br/>
+  <img src="Images/system-architecture.jpg" width="800"><br/>
   <i>Overall architecture of the MYOSA Secure Ride System</i>
 </p>
 
 
 <p align="center">
-  <img src="/helmet-module1.jpg" width="400"><br/>
-  <img src="/helmet-module2.jpg" width="400"><br/>
-  <img src="/helmet-module3.jpg" width="400"><br/>
+  <img src="Images/helmet-module1.jpg" width="400"><br/>
+  <img src="Images/helmet-module2.jpg" width="400"><br/>
+  <img src="Images/helmet-module3.jpg" width="400"><br/>
   <i>Helmet unit using MYOSA Motherboard</i>  
 </p>
 
 <p align="center">
-  <img src="/vehicle-controller.jpg" width="800"><br/>
+  <img src="Images/vehicle-controller.jpg" width="800"><br/>
   <i>Vehicle Unit using External ESP32</i>
 </p>
 <p align="center">
-  <img src="/circuit-diagram.jpg" width="800"><br/>
+  <img src="Images/circuit-diagram.jpg" width="800"><br/>
   <i>Circuit Diagram Representation of The Guardian Link</i>
 </p>
 
@@ -57,7 +57,7 @@ This approach improves rider safety, prevents helmet misuse, and adds afall/cras
 ### Videos
 
 <video controls width="100%">
-  <source src="/msrs-demo.mp4" type="video/mp4">
+  <source src="Videos/Demonstration.mp4" type="video/mp4">
 </video>
 
 ## Features (Detailed)
