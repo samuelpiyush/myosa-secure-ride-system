@@ -573,13 +573,17 @@ Its modular architecture allows easy scalability, future feature expansion, and 
 * Sensor libraries (APDS9960, BMP180, MPU6050)
 
 ## File Structure
+```
 /myosa-msrs
 ├─ myosa-secure-ride-system.md
 ├─ myosa-cover.jpg
 ├─ system-architecture.jpg
 ├─ helmet-module-1.jpg
+├─ helmet-module-2.jpg
+├─ helmet-module-3.jpg
+├─ circuit-diagram.jpg
 ├─ vehicle-controller.jpg
 └─ myosa-demonstration.mp4
-
+```
 
 
