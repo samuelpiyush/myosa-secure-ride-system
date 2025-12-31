@@ -26,7 +26,7 @@ The system ensures that the vehicle ignition remains disabled unless the rider i
 
 The architecture uses a dual-microcontroller, fully wireless design. A MYOSA motherboard acts as the helmet-mounted unit with majorly two sensors the gesture sensore and the barometric pressure sensor, while an external ESP32 mounted on the vehicle unit has the OLED display and gyroscope/accelerometer sesnor. Helmet wear confirmation is transmitted securely via Bluetooth Low Energy (BLE), after which the ignition is activated.
 
-This approach improves rider safety, prevents helmet misuse, and adds afall/crash protection through motion detection and wireless alerts.
+This approach improves rider safety, prevents helmet misuse, and adds a fall/crash protection through motion detection and wireless alerts.
 
 ## Demo / Examples
 
